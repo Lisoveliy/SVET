@@ -16,7 +16,8 @@ bool SVET::Start()
     auto loggerOptions = &Builder->BuildLoggerOptions;
     this->SLogger = std::make_unique<Logger>(loggerOptions->BaudRate,
                                              loggerOptions->CoreLoggerLevel,
-                                             loggerOptions->UserLoggerLevel);
+                                             loggerOptions->UserLoggerLevel,
+                                             loggerOptions->UseColor);
 
     delete this->Builder; // nullptr to Builder
     this->Builder = nullptr;
