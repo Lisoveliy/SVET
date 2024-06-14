@@ -1,6 +1,5 @@
 #include <Arduino.h>
 #include <memory>
-#include "core/SVETCore.h"
 
 std::unique_ptr<SVETCore> core;
 void setup() {
