@@ -23,7 +23,7 @@ SVET(свит/свет) это библиотека для упрощения с
 ## Requirements and Limitations/Требования и ограничения
 
 #### EN
-SVET is being written and tested on ESP8266(NodeMCU v3 (ESP-12E)) in the PlatformIO environment and using the Arduino framework (More about the Arduino framework for ESP - https://github.com/esp8266/Arduino). This means that full stability is possible if the following requirements are met:
+SVET is being written and tested on <strong>ESP8266(NodeMCU v3 (ESP-12E))</strong> in the PlatformIO environment and using the <strong>Arduino framework</strong> (More about the Arduino framework for ESP - https://github.com/esp8266/Arduino). This means that full stability is possible if the following requirements are met:
 
 - Development on the PlatformIO IDE
 - Using <Arduino.h> (https://github.com/esp8266/Arduino)
@@ -33,7 +33,7 @@ Problems related to this stack will be considered more priority than when using 
 <hr>
 
 #### RU
-SVET пишется и тестируется на ESP8266(NodeMCU v3 (ESP-12E)) в окружении PlatformIO и с использованием фреймворка Arduino(Подробнее о фреймворке Arduino под ESP - https://github.com/esp8266/Arduino). Это означает что полная работоспособность возможна при соблюдении следующих требований:
+SVET пишется и тестируется на <strong>ESP8266(NodeMCU v3 (ESP-12E))</strong> в окружении PlatformIO и с использованием <strong>фреймворка Arduino</strong>(Подробнее о фреймворке Arduino под ESP - https://github.com/esp8266/Arduino). Это означает что полная работоспособность возможна при соблюдении следующих требований:
 
 - Разработка под PlatformIO IDE
 - Использование <Arduino.h> (https://github.com/esp8266/Arduino)
