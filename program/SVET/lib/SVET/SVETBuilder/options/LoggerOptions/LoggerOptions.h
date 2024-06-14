@@ -23,7 +23,7 @@ public:
     LoggerOptions(
         MessageType coreLoggerLevel = INFO,
         MessageType userLoggerLevel = INFO,
-        bool useColor = false,
+        bool useColor = true,
         short baudRate = 19200);
     LoggerOptions(LoggerOptions &) = delete;
 };
