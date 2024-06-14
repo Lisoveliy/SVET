@@ -7,11 +7,11 @@
 ## What is it?/Что это?
 
 #### EN
-SVET is a library for simplifying the creation of smart home devices or devices that need a Wi-Fi connection and a Web interface. It provides interfaces for creating your own Web environment, making it easier to connect to Wi-Fi and work with device states.
+SVET(sweet/SVIET) is a library for simplifying the creation of smart home devices or devices that need a Wi-Fi connection and a Web interface. It provides interfaces for creating your own Web environment, making it easier to connect to Wi-Fi and work with device states.
 <hr>
 
 #### RU
-SVET это библиотека для упрощения создания устройств умного дома или устройств которым нужно подключение по Wi-Fi и Web-интерфейс. Она предоставляет интерфейсы для создания своего Web окружения, упрощения подключению к Wi-Fi и работы с состояниями устройства.
+SVET(свит/свет) это библиотека для упрощения создания устройств умного дома или устройств которым нужно подключение по Wi-Fi и Web-интерфейс. Она предоставляет интерфейсы для создания своего Web окружения, упрощения подключению к Wi-Fi и работы с состояниями устройства.
 
 
 ## Library structure/Устройство библиотеки
