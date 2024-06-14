@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-14T16:41:45.196Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 YaBrowser/24.4.0.0 Safari/537.36" etag="6KhGiFT4o213mBbAblaw" version="24.5.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-14T16:44:03.084Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 YaBrowser/24.4.0.0 Safari/537.36" etag="pcMoWdi6GhdGsR4KMaiA" version="24.5.4" type="github">
   <diagram name="Страница — 1" id="8GVegUEztR9iaUUr6jKU">
     <mxGraphModel dx="1146" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -104,7 +104,7 @@
           <mxGeometry x="689" y="30" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="oNEqm6mz5kMRlhb4TvXa-31" value="WiFiServer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
-          <mxGeometry x="49" y="100" width="120" height="60" as="geometry" />
+          <mxGeometry x="49" y="110" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oNEqm6mz5kMRlhb4TvXa-32" value="EEPROM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="49" y="180" width="120" height="60" as="geometry" />
