@@ -33,7 +33,7 @@ Problems related to this stack will be considered more priority than when using 
 <hr>
 
 #### RU
-SVET пишется и тестируется на ESP8266(NodeMCU v3 (ESP-12E)) в окружении Platform IO и с использованием фреймворка Arduino(Подробнее о фреймворке Arduino под ESP - https://github.com/esp8266/Arduino). Это означает что полная работоспособность возможна при соблюдении следующих требований:
+SVET пишется и тестируется на ESP8266(NodeMCU v3 (ESP-12E)) в окружении PlatformIO и с использованием фреймворка Arduino(Подробнее о фреймворке Arduino под ESP - https://github.com/esp8266/Arduino). Это означает что полная работоспособность возможна при соблюдении следующих требований:
 
 - Разработка под PlatformIO IDE
 - Использование <Arduino.h> (https://github.com/esp8266/Arduino)
