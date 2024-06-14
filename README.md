@@ -2,7 +2,7 @@
   <img src="https://github.com/Lisoveliy/SVET/blob/master/logo-sized.png?raw=true" alt="logotype: SVET" width="50%" height="50%"/>
 </p>
 
-### Super-Visor ESP Tools - library add-on for ESP to create a simple web infrastructure, work with Wi-Fi, Web and EEPROM (you can call it CMS)
+### Super-Visor ESP Tools - library add-on for ESP to create a simple web infrastructure, work with Wi-Fi, Web and EEPROM(flash) (you can call it CMS)
   
 ## What is it?/Что это?
 
