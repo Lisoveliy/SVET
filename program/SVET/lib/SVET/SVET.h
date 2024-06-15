@@ -1,5 +1,6 @@
 #pragma once
 #include "SVETBuilder/SVETBuilder.h"
+#include "Logger/Logger.h"
 #include <memory>
 
 /*

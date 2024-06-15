@@ -1,6 +1,5 @@
 #pragma once
 #include "options/LoggerOptions/LoggerOptions.h"
-#include <memory>
 
 /*
  * Definition of SVETBuilder.

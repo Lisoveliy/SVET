@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "Logger.h"
+#include "PerepheryCore/SerialCore.h"
 
 /*
  * Implementation of Logger instance. Docs on Logger.h
@@ -17,12 +18,12 @@ Logger::Logger(
     {
         return;
     }
-    Serial.begin(baudRate);
+    SerialCore::Start(baudRate);
 }
 
 Logger::~Logger()
 {
-    Serial.end();
+    SerialCore::Stop();
 }
 
 const char *Logger::messageTypeToString(MessageType messageType)
@@ -57,50 +58,31 @@ std::string Logger::getMessage(MessageType messageType, char *text, char *initia
     return output;
 }
 
+void Logger::sendMessage(char *data, SerialColor color)
+{
+    SerialCore::SetColor(color);
+    SerialCore::SendLine(data);
+    SerialCore::SetColor(WHITE);
+}
+
+void Logger::sendMessage(const char *data, SerialColor color)
+{
+    SerialCore::SetColor(color);
+    SerialCore::SendLine(data);
+    SerialCore::SetColor(WHITE);
+}
+
 void Logger::Info(char *data, char *initiator)
 {
-    // TODO: check core and user level
-    if (UseColor)
-    {
-        Serial.write(27);
-        Serial.print("[37m"); // White color
-    }
-    Serial.println(getMessage(MessageType::INFO, data, initiator).c_str());
-    if (UseColor)
-    {
-        Serial.write(27);
-        Serial.print("[37m");
-    }
+    sendMessage(getMessage(MessageType::INFO, data, initiator).c_str(), WHITE);
 }
 
 void Logger::Warn(char *data, char *initiator)
 {
-    // TODO: check core and user level
-    if (UseColor)
-    {
-        Serial.write(27);
-        Serial.print("[33m"); // Orange color
-    }
-    Serial.println(getMessage(MessageType::WARN, data, initiator).c_str());
-    if (UseColor)
-    {
-        Serial.write(27);
-        Serial.print("[37m");
-    }
+    sendMessage(getMessage(MessageType::WARN, data, initiator).c_str(), ORANGE);
 }
 
 void Logger::Error(char *data, char *initiator)
 {
-    // TODO: check core and user level
-    if (UseColor)
-    {
-        Serial.write(27);
-        Serial.print("[31m"); // Red color
-    }
-    Serial.println(getMessage(MessageType::ERROR, data, initiator).c_str());
-    if (UseColor)
-    {
-        Serial.write(27);
-        Serial.print("[37m");
-    }
+    sendMessage(getMessage(MessageType::ERROR, data, initiator).c_str(), RED);
 }

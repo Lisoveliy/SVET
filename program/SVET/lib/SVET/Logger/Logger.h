@@ -1,24 +1,13 @@
 #pragma once
+
 #include <string>
+#include "SerialColor.h"
+#include "MessageType.h"
 /*
  * Definition of Logger instance.
  * Writed on 14.06.2024 21:11
  * By Lisoveliy
  */
-
-// Next briefs added for set logger statuses, not explaining logger work!
-/// @brief Type of messages for logger
-enum MessageType
-{
-    /// @brief For info, warn and error messages (default)
-    INFO,
-    /// @brief For warn and error messages
-    WARN,
-    /// @brief For only error messages
-    ERROR,
-    /// @brief For disable logger
-    NONE
-};
 
 /// @brief Logger instance for messages on Serial port
 class Logger
@@ -30,6 +19,8 @@ private:
 
     const char *messageTypeToString(MessageType messageType);
     std::string getMessage(MessageType messageType, char *text, char *initiator);
+    void sendMessage(char *output, SerialColor color);
+    void sendMessage(const char *output, SerialColor color);
 
 public:
     /// @brief Create instance of logger

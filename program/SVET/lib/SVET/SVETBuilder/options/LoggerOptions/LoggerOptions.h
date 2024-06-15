@@ -1,5 +1,5 @@
 #pragma once
-#include <Logger/Logger.h>
+#include "Logger/MessageType.h"
 
 /*
  * Definition of Logger Options.
