@@ -13,8 +13,6 @@
 class Logger
 {
 private:
-    const MessageType CoreLogLevel;
-    const MessageType UserLogLevel;
     const bool UseColor;
 
     const char *messageTypeToString(MessageType messageType);
@@ -23,12 +21,19 @@ private:
     void sendMessage(const char *output, SerialColor color);
 
 public:
+    /// @brief Core Log Level
+    const MessageType CoreLogLevel;
+
+    /// @brief User Log Level
+    const MessageType UserLogLevel;
+
     /// @brief Create instance of logger
     /// @param baudRate Speed of Serial port
     /// @param coreLogLevel LogLevel for Core (if userLogLevel and coreLogLevel equals NONE, the serial connection will not start)
     /// @param userLogLevel LogLevel for user (if userLogLevel and coreLogLevel equals NONE, the serial connection will not start)
     /// @param useColor Send messages with color ESCapes on serial monitor
     Logger(short baudRate, MessageType coreLogLevel, MessageType userLogLevel, bool useColor);
+
     ~Logger();
     /// @brief Log information
     /// @param data Message. Example: "Hello world!"
