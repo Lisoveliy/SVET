@@ -20,6 +20,8 @@ SVET(свит/свет) это библиотека для упрощения с
   <img src="https://github.com/Lisoveliy/SVET/blob/master/docs/MainArchitecture.drawio.svg?raw=true" alt="Main Architecture"/>
 </p>
 
+Для подробной информации о работе библиотеки и начала работы обратитесь к [глоссарию](/docs/ru/misc/glossary.md)!
+
 ## Requirements and Limitations/Требования и ограничения
 
 #### EN
