@@ -1,7 +1,7 @@
 #include "ServiceLogger.h"
 #include "Logger.h"
 /*
- * Implementation of Service Logger instance. Docs on Logger.h
+ * Implementation of Service Logger instance. Docs on ServiceLogger.h
  * Writed on 17.10.2024 16:41
  * By Lisoveliy
  */
