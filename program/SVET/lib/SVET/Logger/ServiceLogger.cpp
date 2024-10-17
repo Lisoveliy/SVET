@@ -2,7 +2,7 @@
 #include "Logger.h"
 /*
  * Implementation of Service Logger instance. Docs on Logger.h
- * Writed on 14.06.2024 21:11
+ * Writed on 17.10.2024 16:41
  * By Lisoveliy
  */
 
