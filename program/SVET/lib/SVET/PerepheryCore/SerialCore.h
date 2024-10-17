@@ -45,7 +45,7 @@ void SerialCore::SendLine(const char *data)
 
 void SerialCore::SetColor(SerialColor color)
 {
-    Serial.write(27);
+    Serial.write(0x1B);
     Serial.print(GetEscapeColor(color)); // White color
 }
 
