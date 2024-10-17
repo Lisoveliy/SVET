@@ -18,7 +18,7 @@ void loop()
 {
   delay(500);
   auto strCounter = std::to_string(counter).c_str();
-  logger->Info((char*)strCounter);
+  logger->Warn((char*)strCounter);
   counter++;
   svet->Loop();
 }

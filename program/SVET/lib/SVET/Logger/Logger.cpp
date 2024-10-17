@@ -60,16 +60,22 @@ std::string Logger::getMessage(MessageType messageType, char *text, char *initia
 
 void Logger::sendMessage(char *data, SerialColor color)
 {
-    SerialCore::SetColor(color);
+    if(this->UseColor)
+        SerialCore::SetColor(color);
     SerialCore::SendLine(data);
-    SerialCore::SetColor(WHITE);
+    
+    if(this->UseColor)
+        SerialCore::SetColor(WHITE);
 }
 
 void Logger::sendMessage(const char *data, SerialColor color)
 {
-    SerialCore::SetColor(color);
+    if(this->UseColor)
+        SerialCore::SetColor(color);
     SerialCore::SendLine(data);
-    SerialCore::SetColor(WHITE);
+    
+    if(this->UseColor)
+        SerialCore::SetColor(WHITE);
 }
 
 void Logger::Info(char *data, char *initiator)
