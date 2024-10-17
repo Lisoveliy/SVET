@@ -15,7 +15,7 @@ class SVET
     SVETBuilder *Builder;
 
 public:
-    std::unique_ptr<Logger> SLogger;
+    std::unique_ptr<Logger> MLogger;
     /// @brief Method that must be included to setup() on main.cpp
     /// @return true if SVET was started
     bool Start();

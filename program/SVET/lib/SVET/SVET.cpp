@@ -14,7 +14,7 @@ bool SVET::Start()
 {
     // Setup logger
     auto loggerOptions = &Builder->BuildLoggerOptions;
-    this->SLogger = std::make_unique<Logger>(loggerOptions->BaudRate,
+    this->MLogger = std::make_unique<Logger>(loggerOptions->BaudRate,
                                              loggerOptions->CoreLoggerLevel,
                                              loggerOptions->UserLoggerLevel,
                                              loggerOptions->UseColor);

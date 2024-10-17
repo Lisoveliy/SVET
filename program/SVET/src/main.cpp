@@ -1,22 +1,24 @@
 #include <Arduino.h>
 #include <memory>
 #include "SVET.h"
+#include "Logger/ServiceLogger.h"
 
 std::unique_ptr<SVET> svet;
-Logger *logger;
+std::unique_ptr<ServiceLogger> logger;
+int counter = 0;
 void setup()
 {
   auto builder = SVETBuilder::Setup()->SetLogger(LoggerOptions());
   svet = std::make_unique<SVET>(SVET(builder));
   svet->Start();
-  logger = svet->SLogger.get();
+  logger = svet->MLogger->GetServiceLogger("main.cpp");
 }
 
 void loop()
 {
-  delay(1000);
-  logger->Info("Hello INFO", "main.cpp");
-  logger->Warn("Hello WARN", "main.cpp");
-  logger->Error("Hello ERROR", "main.cpp");
+  delay(500);
+  auto strCounter = std::to_string(counter).c_str();
+  logger->Info((char*)strCounter);
+  counter++;
   svet->Loop();
 }

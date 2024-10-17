@@ -86,3 +86,7 @@ void Logger::Error(char *data, char *initiator)
 {
     sendMessage(getMessage(MessageType::ERROR, data, initiator).c_str(), RED);
 }
+
+std::unique_ptr<ServiceLogger> Logger::GetServiceLogger(char *initiator){
+    return std::make_unique<ServiceLogger>(ServiceLogger(this, initiator));
+}

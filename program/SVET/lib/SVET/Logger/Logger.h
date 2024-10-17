@@ -3,6 +3,8 @@
 #include <string>
 #include "SerialColor.h"
 #include "MessageType.h"
+#include "ServiceLogger.h"
+#include <memory>
 /*
  * Definition of Logger instance.
  * Writed on 14.06.2024 21:11
@@ -49,4 +51,6 @@ public:
     /// @param data Message. Example: "Error occured"
     /// @param initiator Name of initiator. Example: "main.cpp"
     void Error(char *data, char *initiator = nullptr);
+
+    std::unique_ptr<ServiceLogger> GetServiceLogger(char *initiator);
 };
