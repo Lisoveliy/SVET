@@ -7,6 +7,7 @@
  * By Lisoveliy
  */
 
+//TODO: End service
 FlashService::FlashService(int allocSize)
 {
     EEPROM.begin(allocSize);
